@@ -1,6 +1,33 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
+import {
+	Navbar,
+	ThemeSettings,
+	Footer,
+	UserProfile,
+	Sidebar,
+	Notifications,
+	Header,
+	Button,
+	Cart,
+	Chat,
+	SparkLine,
+	LineChart,
+} from "./components";
+import {
+	Ecommerce,
+	Kanban,
+	Orders,
+	Employees,
+	Editor,
+	Stacked,
+	Pyramid,
+	Customers,
+	ColorPicker,
+	ColorMapping,
+	Editor,
+} from "./pages";
 import "./App.css";
 const App = () => {
 	const activeMenu = false;
@@ -20,7 +47,7 @@ const App = () => {
 					</div>
 					{activeMenu ? (
 						<div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
-							Sidebar
+							<Sidebar />
 						</div>
 					) : (
 						<div className="w-0 dark:bg-secondary-dark-bg">Sidebar w</div>
